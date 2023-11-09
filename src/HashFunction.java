@@ -33,7 +33,9 @@ public class HashFunction {
 		x = x % 10;
 		int terceiro_digito = x/1;
 		
-		return primeiro_digito * 100+ segundo_digito*10 + terceiro_digito;
+		int chave = primeiro_digito * 100+ segundo_digito*10 + terceiro_digito;
+		System.out.println("Primeiro, terceiro e quinto digitos extraidos: " + chave);
+		return chave;
 	}
 	
 	public static int quadratico(int k) {
@@ -46,12 +48,14 @@ public class HashFunction {
 			x = x %1000;
 			int segundo_digito = x/100;
 			chave = primeiro_digito*10+segundo_digito;
+			System.out.println("Digitos do meio:" + chave);
 			return chave;
 		}
 		else {
 			int x = chave % 10000;
 			x = x % 1000;
 			chave  = x/100;
+			System.out.println("Digito do meio:" + chave);
 			return chave;
 		}
 	}
