@@ -55,7 +55,7 @@ public class MainChaining {
 		HashTable hashTable = new HashTableChaining(11);
 		isEmpty(hashTable);
 		
-		int keys[] = { 123456, 789323, 507201, 323689, 832018, 901723, 762347};
+		int keys[] = { 12345, 78932, 50720, 32368, 83201, 90172, 76234};
 		String values[] = {
 			"Lápis",
 			"Caderno",
